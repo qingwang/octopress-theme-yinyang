@@ -13,10 +13,8 @@ Based on [Greyshade](https://github.com/shashankmehta/greyshade)
 
 ##Credits
 
-[Greyshade](https://github.com/shashankmehta/greyshade)
-
-[Orange on gray](https://kuler.adobe.com/Orange-on-gray-color-theme-2221/)
+[Greyshade](https://github.com/shashankmehta/greyshade) | [Orange on gray](https://kuler.adobe.com/Orange-on-gray-color-theme-2221/)
 
 ##License
 
-MIT: [http://sm.mit-license.org](http://sm.mit-license.org/)
+MIT
