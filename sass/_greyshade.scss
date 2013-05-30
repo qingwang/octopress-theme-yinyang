@@ -1,0 +1,371 @@
+//This is the main GREYSHADE css file.
+
+html {
+  height: 100%;
+}
+
+body {
+	background: #33332D;
+	font-family: "Roboto Slab", "Open Sans", "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #33332D;
+	height: 100%;
+}
+
+::selection, ::-moz-selection, ::-webkit-selection {
+  background-color: $greyshade;
+  color: $color-background;
+}
+
+#header {
+	height: auto;
+	border-bottom: none;
+	.subtitle {
+		color: #999;
+		font-style: italic;
+	}
+	#sub-nav {
+		float: none;
+		position: relative;
+		.social {
+			float: none;
+		}
+		.search {
+			float: none;
+			.alignright {
+				float: none;
+			}
+		}
+	}
+
+	h1 {
+		float: none;
+	}
+
+	#main-nav {
+		float: none;
+		margin-left: 0px;
+
+		ul {
+			li {
+				margin-left: 0px;
+				display: block;
+				a {
+					padding: 0px 0px;
+          color: #FFF8E3;
+				}
+			}
+		}
+	}
+}
+
+.container {
+  position: relative;
+  min-height: 100%;
+
+	.credit-box {
+		color: #AAA;
+		font-size: .8em;
+		position: fixed;
+		bottom: 20px;
+		left: 40px;
+		a {
+			color: inherit;
+			text-decoration: underline;
+		}
+	}
+	.mid-col {
+		position: absolute;
+  	right: 0;
+  	min-height: 100%;
+		width: 72%;
+		background: #FFF8E3;
+		#banner {
+			width: 100%;
+			small {
+			margin-right: 70px;
+			}
+		}
+		footer.inner {
+		  text-align: center;
+		  margin: 0px 70px 0px 40px;
+		  width: 60%;
+      p {
+        font-size: 0.8em;
+        margin-bottom: 5px;
+      }
+		}
+		.mid-col-container {
+			padding: 0px 70px 0px 40px;
+			#content {
+				width: 60%;
+				article {
+					border-top: none;
+					.title {
+						margin-left: 0px;
+					}
+					.entry-content {
+						margin-left: 0px;
+						.gist .gist-file .gist-data {
+							.line_numbers {
+								line-height: inherit;
+							}
+							pre {
+								line-height: inherit;
+							}
+						}
+						h2 {
+							font-size: 1.3em;
+							color: #574C4C;
+							border-bottom: none;
+						}
+						h2::before {
+							border-bottom: none;
+						}
+						blockquote {
+							border-left: 5px solid $greyshade;
+							background: #FCFCFC;
+						}
+						table {
+							line-height: 1.2em;
+							td {
+								text-align: left;
+							}
+						}
+					}
+					.meta {
+						position: relative;
+						float: right;
+						top: 0px;
+						color: #555;
+						text-align: right;
+						width: auto;
+						.date::before {
+							color: #555;
+							position: relative;
+							margin-right: 10px;
+						}
+						.tags::before {
+							color: #999;
+							position: relative;
+							margin-right: 10px;
+						}
+					}
+					h1.title{
+						a {
+							color: #333;
+							-webkit-transition: color 0.3s;
+							-moz-transition: color 0.3s;
+							-o-transition: color 0.3s;
+							transition: color 0.3s;
+						}
+						a:hover {
+							color: $greyshade;
+							-webkit-transition: color 0.3s;
+							-moz-transition: color 0.3s;
+							-o-transition: color 0.3s;
+							transition: color 0.3s;
+						}
+					}
+					h1.archive-title{
+            @extend h1.title;
+            margin: 0;
+            font-size: 26px;
+            font-weight: 100;
+						a {
+							color: #33332d;
+						}
+						a:hover {
+							color: #DB4105;
+						}
+          }
+				}
+			}
+		}
+		footer {
+			width: 100%;
+		}
+	}
+	.left-col:hover {
+		opacity: 1;
+	}
+	.left-col {
+		width: 28%;
+		position: fixed;
+		opacity: .3;
+		-webkit-transition: all .2s ease-in;
+		-moz-transition: all .2s ease-in;
+		-o-transition: all .2s ease-in;
+		-ms-transition: all .2s ease-in;
+		transition: all .2s ease-in;
+		height: 100%;
+		.intrude-less {
+			width: 80%;
+		}
+		#header {
+			width: 100%;
+			padding: 20% 0% 0% 15%;
+      text-align: center;
+			#main-nav {
+        text-align: right;
+				margin-top: 10px;
+			}
+      .profile-container {
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+        right: 10%;
+        .site-title {
+          text-align: center;
+          margin-top: 20px;
+          margin-bottom: 10px;
+          a {
+            color: #FFF8E3;
+          }
+        }
+        .site-subtitle {
+          text-align: center;
+          line-height: 1.4em;
+          width: 80%;
+          padding-left: 10%;
+          color: #CCCC9f;
+        }
+			  .profilepic {
+          text-align: center;
+				  img {
+					  border-radius: 50%;
+					  -moz-border-radius: 50%;
+					  -webkit-border-radius: 50%;
+				  }
+			  }
+      }
+			a {
+				color: #EFEFEF;
+				text-shadow: 0 1px #333;
+			}
+			a:hover {
+				color: $greyshade;
+			}
+			#sub-nav {
+				margin-top: 10px;
+				.search::before {
+				left: 10px;
+				}
+				.social {
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}
+
+.archives {
+	.title {
+		font-size: 1.2em;
+	}
+	article {
+		.meta {
+			line-height: 1.5em;
+			margin-top: 0;
+			span::before {
+				padding-right: 0;
+			}
+		}
+	}
+}
+
+a {
+	color: $greyshade;
+}
+
+a:hover {
+	color: $greyshade;
+}
+
+body {
+	@media screen and (max-width: 1240px){
+			margin: 0 0;
+	}
+}
+@media screen and (max-width: 900px){
+	.container {
+		.credit-box {
+			display: none;
+		}
+		.left-col {
+			position: relative;
+			width: 100%;
+			opacity: 1;
+			.intrude-less {
+				margin: auto auto;
+			}
+			#header {
+        margin-top: 250px;
+				padding: 40px 0px;
+				text-align: center;
+				#sub-nav{
+					display: block;
+				}
+				#main-nav {
+						ul {
+							display: none;
+							li {
+								display: inline;
+								margin-right: 10px;
+							}
+						}
+				}
+        .profile-container {
+          position: absolute;
+          bottom: 10%;
+          left: 10%;
+          .site-title {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            a {
+              color: #FFF8E3;
+            }
+          }
+          .site-subtitle {
+            text-align: center;
+            line-height: 1.4em;
+            width: 100%;
+            padding-left: 0;
+            color: #CCCC9f;
+          }
+          .profilepic {
+            text-align: center;
+            img {
+              border-radius: 50%;
+              -moz-border-radius: 50%;
+              -webkit-border-radius: 50%;
+            }
+          }
+        }
+			}
+		}
+		.mid-col {
+			float: none;
+			width: 100%;
+      footer.inner {
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        p {
+          margin-bottom: 5px;
+        }
+      }
+			.mid-col-container {
+				padding: 15px 15px;
+				#content {
+          width: 90%;
+					article {
+						.meta {
+							float: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
