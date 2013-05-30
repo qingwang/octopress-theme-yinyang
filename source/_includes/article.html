@@ -7,5 +7,7 @@
 	</div>
 {% else %}
 	<h1 class="title" itemprop="name">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
+  {% include post/date.html %}
+  <div class="post-date">{{ time }}</div>
 	<div class="entry-content" itemprop="articleBody">{{ content }}</div>
 {% endif %}
