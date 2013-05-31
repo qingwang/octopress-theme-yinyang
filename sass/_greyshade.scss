@@ -99,6 +99,10 @@ body {
 			padding: 0px 70px 0px 40px;
 			#content {
 				width: 60%;
+        .featured {
+          max-width: 100%;
+          height: auto;
+        }
 				article {
 					border-top: none;
 					.title {

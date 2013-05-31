@@ -6,6 +6,9 @@
 		{% if excerpted == 'true' %}<a href="{{ root_url }}{{ post.url }}" class="more-link">{{ site.excerpt_link }}</a>{% endif %}
 	</div>
 {% else %}
+  {% if page.featured %}
+    <img src={{ page.featured }} class="featured" />
+  {% endif %}
 	<h1 class="title" itemprop="name">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
   {% include post/date.html %}
   <div class="post-date">{{ time }}</div>
