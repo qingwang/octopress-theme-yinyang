@@ -103,6 +103,13 @@ body {
           max-width: 100%;
           height: auto;
         }
+        .share_icon_group {
+          margin-top: -15px;
+          .share_icon {
+            float: right;
+            margin-left: 20px;
+          }
+        }
 				article {
 					border-top: none;
 					.title {

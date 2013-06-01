@@ -26,6 +26,10 @@ published: true
 ---
 ```
 
+## Sharing Icons
+
+At the moment YinYang uses [AddThis](http://www.addthis.com/). You need to register an account with them and put your id in `_config.yml`. `source/_includes/post/sharing.html` needs to be customised to your own settings as well. I might change this in the future. Their icons do not look fit.
+
 ## Credits
 
 [Greyshade](https://github.com/shashankmehta/greyshade) | [Orange on gray](https://kuler.adobe.com/Orange-on-gray-color-theme-2221/)
