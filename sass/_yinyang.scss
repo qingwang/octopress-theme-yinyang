@@ -166,7 +166,11 @@ body {
 							color: #999;
 							position: relative;
 							margin-right: 10px;
+              font-size: 0.9em;
 						}
+            .tags {
+              font-size: 15px;
+            }
 					}
 					h1.title{
 						a {
@@ -187,7 +191,7 @@ body {
 					h1.archive-title{
             @extend h1.title;
             margin: 0;
-            font-size: 26px;
+            font-size: 22px;
             font-weight: 100;
 						a {
 							color: #33332d;
@@ -282,7 +286,7 @@ body {
 	}
 	article {
 		.meta {
-			line-height: 1.5em;
+			//line-height: 1.5em;
 			margin-top: 0;
 			span::before {
 				padding-right: 0;
