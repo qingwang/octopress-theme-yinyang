@@ -135,7 +135,9 @@ article{
 		}
 	}
 }
-// .share{
+.share{
 // 	padding: 15px 0;
 //	@include border-shadow();
-// }
+position: relative;
+z-index: 1;
+}
