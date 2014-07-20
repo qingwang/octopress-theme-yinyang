@@ -3,7 +3,7 @@
 YinYang (陰陽) is a minimal, responsive theme for Octopress.
 Based on [Greyshade](https://github.com/shashankmehta/greyshade)
 
-[Demo](http://blog.due.io/)
+![](http://public.due.io/yinyang-demo.png)
 
 ## Install
 
